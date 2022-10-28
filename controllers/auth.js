@@ -19,7 +19,7 @@ const register = asyncErrorWrapper( async (req,res,next) => {
 
 const errorTest = (req,res,next) => {
 
-    return next(new SyntaxError("Custom Error Message",400));
+    return next(new TypeError("Type Error")); 
 
 };
 
